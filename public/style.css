@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.options-cont{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #ecf0f1;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.tools-cont{
+    display: flex;
+    height: 4rem;
+    width: 54vw;
+    background-color:#ecf0f1;
+    position: absolute;
+    top: 2rem;
+    left: 24vw;
+    justify-content: space-around;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.tools-cont >*{
+    display: block;
+    width: 3.5rem;
+    height: 3rem;
+    margin: 0.6rem;
+    
+}
+
+.pencil-tool-cont{
+    height: 3.4rem;
+    width: 8.3rem;
+    position: absolute;
+    display: none;           
+    background-color:#ecf0f1;
+    top: 6rem;
+    left: 24vw;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.pencil-width-cont{
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-width-cont input{
+    width: 80%
+}
+.pencil-color-cont{
+    height: calc( 100% - 1.2rem );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.pencil-color{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+
+.eraser-tool-cont{
+    height: 1.2rem;
+    width: 8.3rem;
+    background-color:#ecf0f1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6rem;
+    left: 32vw;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.eraser-tool-cont input{
+    width: 80%;
+}
+
+.scale-tools{
+    animation-name: scale-tools;
+    animation-duration: 1s;
+}
+@keyframes scale-tools{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.sticky-cont{
+    height: 13rem;
+    width: 13rem;
+    position: absolute;
+    top: 14rem;
+    left: 10rem;
+}
+.header-cont{
+    height: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#c8d6e5
+}
+.header-cont >*{
+    height: 0.7rem;
+    width: 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+.minimize{
+    background-color: #1dd1a1;
+}
+.remove{
+    background-color: #ee5253;
+}
+.notes-cont{
+    height: calc( 100% - 1.2rem );
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
